@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <title>Free the plead 🥺</title>
-<div class="container">
-    <div class="sliding-background"></div>
-  </div>
-  <style>
+<div class="scroll"></div>
+</div>
+<style>
 
 
 .container {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
-.sliding-background {
+.scroll {
+  overflow: hidden;
   background: url("img/plead.png") repeat;
   height: 102400px;
   width: 102400px;
-  animation: slide 3s alternate infinite;
 }
 
-@keyframes slide{
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-1600px, 0, 0);
-  }
-}
   </style>
