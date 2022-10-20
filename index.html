@@ -1,20 +1,44 @@
-<!DOCTYPE html>
-<title>Free the plead 🥺</title>
-<div class="scroll"></div>
-</div>
-<style>
+<html>
+    <head>
+        <title>Free the Plead 🥺🥺🥺🥺🥺🥺</title>
+        <style>
+            html, body {
+                margin: 0px;
+                height: 101vh;
+                width: 101vw;
+                }
+        
+            .bounce {
+                background: url("img/plead.png");
+                }
+    
+        </style>
+    </head>
+    
+    <body class="bounce">
+        <!-- Responsive and clean -->
+    </body>
 
+    <script>
+        // Body element
+        let body_element = document.querySelector("body");
 
-.container {
-  overflow-x: auto;
-  overflow-y: hidden;
-}
+        // Scroll variables
+        let scroll_x = window.innerWidth;
+        let scroll_y = window.innerHeight;
 
-.scroll {
-  overflow: hidden;
-  background: url("img/plead.png") repeat;
-  height: 102400px;
-  width: 102400px;
-}
+        window.onscroll = (ev) => {
+            // Scroll infinitely down
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
+                scroll_y += 1000;
+                body_element.style.height = scroll_y;
+            }
 
-  </style>
+            // Scroll infinitely right
+            if ((window.innerWidth + window.scrollX) >= document.body.offsetWidth){
+                scroll_x += 1000;
+                body_element.style.width = scroll_x;
+            }
+        };
+    </script>
+</html>
